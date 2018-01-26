@@ -57,6 +57,7 @@
     {
 %>
 	<p><fmt:message key="jsp.submit.select-collection.info1"/></p>
+	<p style="background-color: #ffff91; padding: 10px; font-weight: bold; font-size: 1.3em; margin: 20px 0 ;">Important: Only submit if you have been issued page numbers for your publication. If you are submitting a document which has SANBI co-authors, PLEASE <a href="http://opus.sanbi.org/">search the database for your title</a> before proceeding further to ensure that it has not already been submitted. <br><br>Documents should only get uploaded ONCE to the Institutional Repository.</p>
 
     <form action="<%= request.getContextPath() %>/submit" method="post" onkeydown="return disableEnterKey(event);">
 <%

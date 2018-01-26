@@ -38,17 +38,44 @@
 </div>
 </main>
             <%-- Page footer --%>
-             <footer class="navbar navbar-inverse navbar-bottom">
-             <div id="designedby" class="container text-muted">
-             <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
-                                    src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
-                                    alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
-                                <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
-                                <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
-                                <a href="<%= request.getContextPath() %>/htmlmap"></a></p>
-                                </div>
-			</div>
+    <footer style="background-color:#333; color:white; padding-top:35px;">
+        <div class="container">
+            <div class="row" style="border-bottom: 6px solid #bcbcbc ; margin-bottom:35px;">
+            <div class="text-2 widget_text col-sm-4">
+            <div style="border-top:6px solid #ffb15b ; width=80%"> </div>
+                <h3>Contact</h3>
+                <div class="textwidget">
+                    <b>Pretoria</b></br>
+                    Phone: +27 12 843 5000</br>
+                    <a href="http://biodiversityadvisor.sanbi.org/contact/">Contact us</a></br></br>
+                </div>
+                <div class="textwidget">
+                    <b>Cape Town</b></br>
+                    Phone: +27 21 799 8800</br>
+                    <a href="http://biodiversityadvisor.sanbi.org/contact/">Contact us</a>                </div>
+            </div>
+            <div class="text-3 widget_text col-sm-4";>
+            <div style="border-top:6px solid #a48dc4 ; width=80%"> </div>
+                <h3>SANBI's online information resources</h3>
+                <div class="textwidget">
+                    <a href="http://bgis.sanbi.org">Biodiversity GIS (BGIS)</a></br>
+                    <a href="http://posa.sanbi.org">Plants of Southern Africa (POSA)</a></br>
+                </div>
+            </div>
+            <div class="text-4 widget_text col-sm-4">
+            <div style="border-top:6px solid #75b47a ; width=80%"> </div>
+                <h3>Quick Links</h3>
+                <div class="textwidget">
+                   <a href="http://www.sanbi.org">SANBI Corporate website</a></br>
+                   <a href="http://www.sanbi.org">Corporate website information resources</a></br>
+                 <a href="http://www.sanbi.org/terms">Terms and Conditions</a>    
+                </div>
+            </div>
+            <div class="row" style="margin-bottom:25px;">
+            </div>
+            </div >
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin-bottom:5px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </div>
     </footer>
     </body>
 </html>

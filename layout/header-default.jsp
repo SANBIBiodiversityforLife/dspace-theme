@@ -54,6 +54,7 @@
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/sanbi-theme.css" type="text/css" />
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -112,7 +113,7 @@
     if (!navbar.equals("off"))
     {
 %>
-            <div class="container">
+             <div class="container" style="max-width:100%; padding-left:0px; padding-right:0px">
                 <dspace:include page="<%= navbar %>" />
             </div>
 <%
@@ -129,7 +130,7 @@
 </header>
 
 <main id="content" role="main">
-<div class="container banner">
+<!--<div class="container banner">
     <div class="row">
         <div class="col-md-9 brand">
             <h1><fmt:message key="jsp.layout.header-default.brand.heading" /></h1>
@@ -138,11 +139,27 @@
         <div class="col-md-3"><img class="pull-right" src="<%= request.getContextPath() %>/image/logo.gif" alt="DSpace logo" />
         </div>
     </div>
-</div>
+</div>-->
+<!-- Replaced below -->
+<div class="container-fluid" style="background-image: url('/image/BannerImage1.jpg'); height:300px; margin-top: -10px; padding-top:40px; color:white; text-shadow: 0 0 20px #000000;">
+	<div class="row">
+		<div class="col-md-12" style="text-align:center">
+			<h1><strong>Search for SANBI documents</strong></h1>
+			<h3 style="margin-top:35px"><strong>Including all scientific publications, brochures, pamphlets, workshop reports and proceedings and Biodiversity Heritage Library materials.</strong></h3>
+			<form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-center">
+			<div class="form-group">
+			  <input type="text" class="form-control" placeholder="Enter keywords" name="query" id="tequery" size="45"/>
+			</div>
+			<button type="submit" class="btn btn-primary">Search <span class="glyphicon glyphicon-search"></span></button>
+			</form>
+		</div>
+	</div>
+</div> 
+<!-- End replace -->
 <br/>
                 <%-- Location bar --%>
 <%
-    if (locbar)
+    if (locbar && false)
     {
 %>
 <div class="container">

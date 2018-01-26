@@ -54,9 +54,9 @@
     }
 %>
 
-
-       <div class="navbar-header">
-         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img height="25" src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a>
+	<div class="container" style="max-width:100%;background-color:white !important"><div class="container">
+       <div class="navbar-header" style="width:100%">
+         <a class="navbar-brand" href="<%= request.getContextPath() %>/"><img src="<%= request.getContextPath() %>/image/dspace-logo-only.png" alt="DSpace logo" /></a>
        </div>
        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
        <div class="nav navbar-nav navbar-right">
@@ -95,5 +95,5 @@
            </li>
           </ul>
           
-	</div>
+	</div></div></div>
     </nav>

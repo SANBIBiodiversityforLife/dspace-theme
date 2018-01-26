@@ -54,6 +54,7 @@
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
         <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/sanbi-theme.css" type="text/css" />
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -112,7 +113,7 @@
     if (!navbar.equals("off"))
     {
 %>
-            <div class="container">
+            <div class="container" style="max-width:100%; padding-left:0px; padding-right:0px;">
                 <dspace:include page="<%= navbar %>" />
             </div>
 <%
@@ -120,7 +121,7 @@
     else
     {
 %>
-        <div class="container">
+        <div class="container" style="max-width:100%; padding-left:0px; padding-right:0px;">>
             <dspace:include page="/layout/navbar-minimal.jsp" />
         </div>
 <%
@@ -131,7 +132,7 @@
 <main id="content" role="main">
                 <%-- Location bar --%>
 <%
-    if (locbar)
+    if (locbar && false)
     {
 %>
 <div class="container">
